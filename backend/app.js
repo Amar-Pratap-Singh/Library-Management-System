@@ -21,7 +21,8 @@ app.use(cors({
 
 
 // Routes
-app.use('/api/students', studentRoutes)
+// app.use('/api/students', studentRoutes)
+// Add all the route here also
 
 
 module.exports = app;

@@ -1,10 +1,14 @@
 const Student = require('../models/studentModel');
 
-exports.getStudentDetails = async (req, res) => {
+exports.getAllStudent = async (req, res) => {
     try {
-        const student = await Student.findOne();
-        res.json({ data: student || 'No student found' });
+        // Code to find student details of all students
+        // Send the result in response to frontend
     } catch (error) {
         res.status(500).json({ error: error.message });
     }
 };
+
+// add a function of name getStudent
+// add a function of name addStudent
+// add a function of name updateStudent
